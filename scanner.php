@@ -5,11 +5,14 @@
 include_once "connection.php";
 session_start();
 $user_id = $_SESSION['user_id'] ?? null;
+echo 'UserID ='. $user_id.'<br>';
 if ($user_id){
     $person = getUserInfo($user_id);
     echo '<pre>';
     var_dump($person);
     echo '</pre>';
+    $total_checkins = countCheckin($user_id);
+    echo $total_checkins;
 }
 
 if (isset($_POST['user-name'], $_POST['mobile-no'])){
@@ -25,24 +28,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 }
 
-
 function handleCheckin($location, $user_id){
     global $conn;
-    $sql_check_location = "SELECT * FROM company WHERE company_name = '$$location'";
+    $sql_check_location = "SELECT * FROM company WHERE company_name = '$location'";
     $result_check_loc = $conn->query($sql_check_location);
+//    echo '<pre>';
+//    var_dump($result_check_loc->fetch_object());
+//    echo '</pre>';
 
     $sql_insert_loc = "INSERT INTO company (company_name, created) VALUES ('$location', NOW())";
 
-    $sql_insert_checkin = "INSERT INTO checkin (company_id,user_id, created) SELECT '$user_id', company_id, NOW() FROM company WHERE company_name = '$location'";
+    $sql_insert_checkin = "INSERT INTO checkin (company_id,user_id, created) SELECT company_id,'$user_id', NOW() FROM company WHERE company_name = '$location'";
 
     if ($result_check_loc){
         // if location already exists
         if($count = $result_check_loc->num_rows){
             // echo '<p>', $count, '</p>';
-            echo 'location exists';
+            echo '$location exists';
 
             if ($conn->query($sql_insert_checkin) === TRUE) {
                 echo "New checkin logged successfully";
+                header('Location: scanner.php');
             } else {
                 echo "Error: " . $sql_insert_checkin . "<br>" . $conn->error;
             }
@@ -52,6 +58,7 @@ function handleCheckin($location, $user_id){
                 echo "New location created successfully"."<br>";
                 if ($conn->query($sql_insert_checkin) === TRUE) {
                     echo "New attendance record created successfully"."<br>";
+                    header('Location: scanner.php');
                 } else {
                     echo "Error: " . $sql_insert_checkin . "<br>" . $conn->error;
                 }
@@ -94,6 +101,19 @@ function editInfo($name, $number, $user_id){
     }
 }
 
+function countCheckin($userid){
+    global $conn;
+    $sql = "SELECT COUNT(*) as count FROM checkin WHERE user_id = '$userid'";
+    $result = $conn->query($sql);
+    if ($result) {
+//        echo '<pre>';
+//        var_dump($result->fetch_object()->count);
+//        echo '</pre>';
+        return $result->fetch_object()->count;
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 
 ?>
 
@@ -287,7 +307,11 @@ function editInfo($name, $number, $user_id){
                                 </div>
                                 <div class="form_group form_totalcheckin">
                                     <label class="form_lbl">Total Check-Ins</label>
-                                    <div class="form_val">3</div>
+                                    <div class="form_val">
+                                        <?php if (isset($total_checkins)): ?>
+                                        <?php echo $total_checkins ?>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
