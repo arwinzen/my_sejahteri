@@ -10,6 +10,7 @@ if (isset($_POST['user-name'], $_POST['mobile-no']))
 {
 //    $name = $_POST['user-name'];
 //    $number = $_POST['mobile-no'];
+    global $conn;
     $display_error = false;
     $_SESSION['name'] = $_POST['user-name'];
     $_SESSION['number'] = $_POST['mobile-no'];

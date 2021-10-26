@@ -4,6 +4,7 @@
 <?php
 include_once "connection.php";
 session_start();
+
 $user_id = $_SESSION['user_id'] ?? null;
 echo 'UserID ='. $user_id.'<br>';
 if ($user_id){
@@ -12,7 +13,10 @@ if ($user_id){
     var_dump($person);
     echo '</pre>';
     $total_checkins = countCheckin($user_id);
-    echo $total_checkins;
+    if ($total_checkins > 8){
+        $check_symbol = '&#10003;';
+    }
+    echo "total checkins". " : ". $total_checkins;
 }
 
 if (isset($_POST['user-name'], $_POST['mobile-no'])){
@@ -23,8 +27,10 @@ if (isset($_POST['user-name'], $_POST['mobile-no'])){
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     if (isset($_POST['submit'], $_POST['location'])){
-        $location = $_POST['location'];
-        handleCheckin($location, $user_id);
+        if ($_POST['location']){
+            $location = $_POST['location'];
+            handleCheckin($location, $user_id);
+        }
     }
 }
 
@@ -293,7 +299,7 @@ function countCheckin($userid){
                             <div class="info_top_left">
                                 <div class="form_group form_name">
                                     <label class="form_lbl">Name</label>
-                                    <div class="form_val"><?php echo $person->user_name ?></div>
+                                    <div class="form_val"><?php echo $person->user_name ?> <?php echo $check_symbol ?? null ?></div>
                                 </div>
                                 <div class="form_group form_mobileno">
                                     <label class="form_lbl">Mobile Number</label>
