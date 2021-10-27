@@ -17,7 +17,6 @@ require_once 'controller\tacno_controller.php';
     <link rel="stylesheet" type="text/css" href="dist/css/style.css?v=1.0.2" />
 
 
-
 </head>
 
 <body>
