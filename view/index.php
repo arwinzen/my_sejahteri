@@ -25,8 +25,8 @@
                 <p class="app__desc_1">We will collect just two details about you. Let's start with your name!</p>
             </div>
             <form action="tacno.php" method="POST">
-                <input type="text" name="user-name" class="form_app_text" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required autocomplete="off">
-                <input type="text" name="mobile-no" class="form_app_text" placeholder="Mobile No" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required autocomplete="off">
+                <input type="text" name="user-name" class="form_app_text" autofocus  placeholder="Name"  required autocomplete="off">
+                <input type="text" name="mobile-no" class="form_app_text" autofocus  placeholder="Mobile No" required autocomplete="off">
                 <div class="form_app_checkbox_container">
                     <input type="checkbox" name="checkbox" class="form_app_checkbox" id="pdpaTnc">
                     <label for="pdpaTnc" class="form_app_lbl">I hereby acknowledge that I have read, understand and agree to the <a data-toggle="modal" data-target="#termsofuseprivacypolicy" class="pdpa_link">PDPA terms & conditions</a>.</label>
