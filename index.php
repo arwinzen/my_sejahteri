@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<?php
-//if (http_response_code() === 404) {
-//    head('Location: index.php');
-//}
-//
-//echo '<pre>';
-//var_dump(http_response_code());
-//echo '</pre>';
-?>
-
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
