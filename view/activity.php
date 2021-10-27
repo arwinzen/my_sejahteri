@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<?php
-require_once 'controller/scanner_control.php';
-
-?>
-
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,9 +10,9 @@ require_once 'controller/scanner_control.php';
     <meta name="format-detection" content="telephone=no" />
 
 
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css?v=1.0.5" />
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css?v=1.0.5" />
 
 
 
@@ -26,7 +21,7 @@ require_once 'controller/scanner_control.php';
 <body class="app__card">
 
     <div class="app__container">
-        <div class="app__cards_wrapper scanner_active">
+        <div class="app__cards_wrapper activity_active">
             <div class="app__cards_container">
                 <div class="card_title title_info">Info</div>
                 <div class="card_title title_profile">Profile</div>
@@ -37,24 +32,19 @@ require_once 'controller/scanner_control.php';
                 <div class="horizontal_card card_scanner">
                     <div class="card_scanner_container">
                     <div class="card_scanner_front">
-                        <div class="top_camera_placeholder">
-                            <form action="" method="post">
-                                <input style="padding: 10px;margin: 100px 100px" class="form_txt_sm" type="text" name="location" autocomplete="off" placeholder="Enter Location">
-                                <button style="padding: 30px; margin: 0 130px" class="btn_white btn_sm" name="submit" type="submit">Check-In</button>
-                            </form>
-                        </div>
+                        <div class="top_camera_placeholder"></div>
                         <div class="btm_scanner_details">
-                            <div class="scanner_desc_container">Scan the CVD QR code for instant Check-In</div>
+                            <div class="scanner_desc_container">Scan the QR code for instant Check-In</div>
                         </div>
-                        <div class="scanner_icon"><img src="dist/images/cvd_scanner_camera.png" alt=""/></div>
+                        <div class="scanner_icon"><img src="../dist/images/cvd_scanner_camera.png" alt=""/></div>
                     </div>
                     <div class="card_scanner_back card_thankyou">
                         <div class="voucher_container">
-                            <a href="#" class="cancel_btn cancel_scanner"><img src="dist/images/cancel_blue.png" alt=""/></a>
+                            <a href="#" class="cancel_btn cancel_scanner"><img src="../dist/images/cancel_blue.png" alt=""/></a>
                             <div class="thankyou_container">
                                 <div class="thankyou_title">Thank You</div>
                                 <div class="thankyou_company_branch">
-                                    <div class="thankyou_company">KevinHaha Sdn Bhd</div>
+                                    <div class="thankyou_company">InspireNow Sdn Bhd</div>
                                     <div class="thankyou_branch">Kuala Lumpur</div>
                                 </div>
                                 <div class="thankyou_datetime_checkin">
@@ -67,12 +57,12 @@ require_once 'controller/scanner_control.php';
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_inner">
                                         <div class="voucher_details_face voucher_details_front">
-                                            <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                            <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                             <div class="voucher_card_content">
                                                 <div class="voucher_left">
                                                     <div class="voucher_left_top">
                                                         <div class="voucher_company_branch_flex">
-                                                            <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                            <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                             <div class="voucher_branch">Kuala Lumpur</div>
                                                         </div>
                                                         <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -88,12 +78,12 @@ require_once 'controller/scanner_control.php';
                                 </div>
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
                                                     <div class="voucher_company_branch_flex">
-                                                        <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                        <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                         <div class="voucher_branch">Kuala Lumpur</div>
                                                     </div>
                                                     <div class="voucher_promo_title">30% Off Second Purchase</div>
@@ -112,12 +102,12 @@ require_once 'controller/scanner_control.php';
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_inner">
                                         <div class="voucher_details_face voucher_details_front">
-                                            <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                            <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                             <div class="voucher_card_content">
                                                 <div class="voucher_left">
                                                     <div class="voucher_left_top">
                                                         <div class="voucher_company_branch_flex">
-                                                            <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                            <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                             <div class="voucher_branch">Kuala Lumpur</div>
                                                         </div>
                                                         <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -143,34 +133,30 @@ require_once 'controller/scanner_control.php';
                                 <div class="card_profile_content">
                                     <div class="form_group form_name">
                                         <label class="form_lbl">Name</label>
-                                        <div class="form_val"><?php echo $person->user_name ?></div>
+                                        <div class="form_val">John Doe</div>
+                                        <a href="#" class="edit_profile_link">Edit</a>
                                     </div>
                                     <div class="form_group form_mobileno">
                                         <label class="form_lbl">Mobile Number</label>
-                                        <div class="form_val"><?php echo $person->mobile_no ?></div>
+                                        <div class="form_val">012-3456789</div>
                                     </div>
-                                    <a href="#" class="edit_profile_link">Edit</a>
                                 </div>
                             </div>
                         </div>
                         <div class="card_profile_back">
                             <div class="profile_back_card">
-                                <a href="#" class="cancel_btn cancel_profile"><img src="dist/images/svg/cancel_blue.svg" alt=""/></a>
+                                <a href="#" class="cancel_btn cancel_profile"><img src="../dist/images/svg/cancel_blue.svg" alt=""/></a>
                                 <div class="card_profile_content">
                                     <div class="form_group form_name">
                                         <label class="form_lbl">Name</label>
-                                        <form action="" method="post">
-                                            <input name="user-name" type="text" class="form_txt_sm" value="<?php echo $person->user_name ?>">
-                                            <br>
-                                            <br>
-                                            <div class="form_group form_mobileno">
-                                                <label class="form_lbl">Mobile Number</label>
-                                                <input name="mobile-no" class="form_val" value="<?php echo $person->mobile_no ?>">
-                                            </div>
-                                            <button type="submit" class="form_app_submit submit_profile btn_orange">Save</button>
-                                        </form>
+                                        <input type="text" class="form_txt_sm" value="John Doe">
+                                    </div>
+                                    <div class="form_group form_mobileno">
+                                        <label class="form_lbl">Mobile Number</label>
+                                        <div class="form_val">012-3456789</div>
                                     </div>
                                 </div>
+                                <button type="button" class="form_app_submit submit_profile btn_orange">Save</button>
                             </div>
                         </div>
                     </div>
@@ -182,25 +168,21 @@ require_once 'controller/scanner_control.php';
                             <div class="info_top_left">
                                 <div class="form_group form_name">
                                     <label class="form_lbl">Name</label>
-                                    <div class="form_val"><?php echo $person->user_name ?> <?php echo $check_symbol ?? null ?></div>
+                                    <div class="form_val">John Doe</div>
                                 </div>
                                 <div class="form_group form_mobileno">
                                     <label class="form_lbl">Mobile Number</label>
-                                    <div class="form_val"><?php echo $person->mobile_no ?></div>
+                                    <div class="form_val">012-3456789</div>
                                 </div>
                             </div>
                             <div class="info_top_right">
                                 <div class="form_group form_joined">
                                     <label class="form_lbl">Joined Since</label>
-                                    <div class="form_val"><?php echo $person->created ?></div>
+                                    <div class="form_val">1 June 2020</div>
                                 </div>
                                 <div class="form_group form_totalcheckin">
                                     <label class="form_lbl">Total Check-Ins</label>
-                                    <div class="form_val">
-                                        <?php if (isset($total_checkins)): ?>
-                                        <?php echo $total_checkins ?>
-                                        <?php endif; ?>
-                                    </div>
+                                    <div class="form_val">3</div>
                                 </div>
                             </div>
                         </div>
@@ -208,19 +190,19 @@ require_once 'controller/scanner_control.php';
                             <div class="info_btm_title">Keep Yourself Safe</div>
                             <div class="info_btm_icon_flex">
                                 <div class="info_btm_rows rows_01">
-                                    <div class="info_icon icon_01"><img src="dist/images/cvd_info_icon_01.png" alt="" /></div>
+                                    <div class="info_icon icon_01"><img src="../dist/images/cvd_info_icon_01.png" alt="" /></div>
                                     <div class="icon_caption">Wear a mask</div>
                                 </div>
                                 <div class="info_btm_rows rows_02">
-                                    <div class="info_icon icon_02"><img src="dist/images/cvd_info_icon_02.png" alt="" /></div>
+                                    <div class="info_icon icon_02"><img src="../dist/images/cvd_info_icon_02.png" alt="" /></div>
                                     <div class="icon_caption">Sanitize Your Hands</div>
                                 </div>
                                 <div class="info_btm_rows rows_03">
-                                    <div class="info_icon icon_03"><img src="dist/images/cvd_info_icon_03.png" alt="" /></div>
+                                    <div class="info_icon icon_03"><img src="../dist/images/cvd_info_icon_03.png" alt="" /></div>
                                     <div class="icon_caption">Keep Your Distance</div>
                                 </div>
                                 <div class="info_btm_rows rows_04">
-                                    <div class="info_icon icon_04"><img src="dist/images/cvd_info_icon_04.png" alt="" /></div>
+                                    <div class="info_icon icon_04"><img src="../dist/images/cvd_info_icon_04.png" alt="" /></div>
                                     <div class="icon_caption">No Handshake</div>
                                 </div>
                             </div>
@@ -235,12 +217,12 @@ require_once 'controller/scanner_control.php';
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
                                                     <div class="voucher_company_branch_flex">
-                                                        <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                        <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                         <div class="voucher_branch">Kuala Lumpur</div>
                                                     </div>
                                                     <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -257,12 +239,12 @@ require_once 'controller/scanner_control.php';
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
                                                     <div class="voucher_company_branch_flex">
-                                                        <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                        <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                         <div class="voucher_branch">Kuala Lumpur</div>
                                                     </div>
                                                     <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -279,12 +261,12 @@ require_once 'controller/scanner_control.php';
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
                                                     <div class="voucher_company_branch_flex">
-                                                        <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                        <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                         <div class="voucher_branch">Kuala Lumpur</div>
                                                     </div>
                                                     <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -304,12 +286,12 @@ require_once 'controller/scanner_control.php';
                             <div class="voucher_title">Expired</div>
                             <div class="voucher_details_container">
                                 <div class="voucher_details_face voucher_details_front">
-                                    <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
+                                    <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
                                     <div class="voucher_card_content">
                                         <div class="voucher_left">
                                             <div class="voucher_left_top">
                                                 <div class="voucher_company_branch_flex">
-                                                    <div class="voucher_company">KevinHaha Sdn Bhd</div>
+                                                    <div class="voucher_company">InspireNow Sdn Bhd</div>
                                                     <div class="voucher_branch">Kuala Lumpur</div>
                                                 </div>
                                                 <div class="voucher_promo_title">Buy 1 Free 1</div>
@@ -324,7 +306,7 @@ require_once 'controller/scanner_control.php';
                             </div>
                             <div class="voucher_details_container">
                                 <div class="voucher_details_face voucher_details_front">
-                                    <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
+                                    <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
                                     <div class="voucher_card_content">
                                         <div class="voucher_left">
                                             <div class="voucher_left_top">
@@ -381,7 +363,7 @@ require_once 'controller/scanner_control.php';
                     <div class="activity_container">
                         <div class="activity_details">
                             <div class="calendar_day">Calendar Day: 29 May 2020</div>
-                            <a href="#" class="cancel_btn cancel_activity"><img src="dist/images/svg/cancel_blue.svg" alt=""/></a>
+                            <a href="#" class="cancel_btn cancel_activity"><img src="../dist/images/svg/cancel_blue.svg" alt=""/></a>
                         </div>
                         <div class="activity_calendar_listing_container">
                             
@@ -450,7 +432,6 @@ require_once 'controller/scanner_control.php';
             <div class="navbar_btm_container">
                 <div class="navbar_menu navbar_info"><div class="navbar_icon icon_info"></div><div class="navbar_caption">Info</div></div>
                 <div class="navbar_menu navbar_profile"><div class="navbar_icon icon_profile"></div><div class="navbar_caption">Profile</div></div>
-<!--                <a href="profile.php"></a><div class="navbar_menu navbar_profile"><div class="navbar_icon icon_profile"></div><div class="navbar_caption">Profile</div></div></a>-->
                 <div class="navbar_menu navbar_scanner"><div class="navbar_icon icon_scanner"></div></div>
                 <div class="navbar_menu navbar_voucher"><div class="navbar_icon icon_voucher"></div><div class="navbar_caption">Voucher</div></div>
                 <div class="navbar_menu navbar_activity"><div class="navbar_icon icon_activity"></div><div class="navbar_caption">Activity</div></div>
@@ -476,11 +457,11 @@ require_once 'controller/scanner_control.php';
     </div>
     
 
-    <script src="dist/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="dist/js/app.js"></script>
+    <script src="../dist/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="../dist/js/app.js"></script>
     
     
     <script>

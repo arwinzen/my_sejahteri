@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="format-detection" content="telephone=no" />
 
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css?v=1.0.2" />
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css?v=1.0.2" />
 
 
 
@@ -32,7 +32,7 @@
                     <label for="pdpaTnc" class="form_app_lbl">I hereby acknowledge that I have read, understand and agree to the <a data-toggle="modal" data-target="#termsofuseprivacypolicy" class="pdpa_link">PDPA terms & conditions</a>.</label>
                 </div>
                 <div class="form_app_submit_container">
-                    <button type="submit" class="form_app_submit btn_blue">Next <span class="next_arrow_icon"><img src="dist/images/svg/arrow_right_white.svg" alt=""></span></button>
+                    <button type="submit" class="form_app_submit btn_blue">Next <span class="next_arrow_icon"><img src="../dist/images/svg/arrow_right_white.svg" alt=""></span></button>
                 </div>
             </form>
         </div>
@@ -79,10 +79,10 @@
     </div>
 
 
-    <script src="dist/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/app.js"></script>
+    <script src="../dist/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/app.js"></script>
 
 
 </body>

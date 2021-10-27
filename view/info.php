@@ -10,9 +10,9 @@
     <meta name="format-detection" content="telephone=no" />
 
 
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css?v=1.0.5" />
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css?v=1.0.5" />
 
 
 
@@ -36,11 +36,11 @@
                         <div class="btm_scanner_details">
                             <div class="scanner_desc_container">Scan the QR code for instant Check-In</div>
                         </div>
-                        <div class="scanner_icon"><img src="dist/images/cvd_scanner_camera.png" alt=""/></div>
+                        <div class="scanner_icon"><img src="../dist/images/cvd_scanner_camera.png" alt=""/></div>
                     </div>
                     <div class="card_scanner_back card_thankyou">
                         <div class="voucher_container">
-                            <a href="#" class="cancel_btn cancel_scanner"><img src="dist/images/cancel_blue.png" alt=""/></a>
+                            <a href="#" class="cancel_btn cancel_scanner"><img src="../dist/images/cancel_blue.png" alt=""/></a>
                             <div class="thankyou_container">
                                 <div class="thankyou_title">Thank You</div>
                                 <div class="thankyou_company_branch">
@@ -57,7 +57,7 @@
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_inner">
                                         <div class="voucher_details_face voucher_details_front">
-                                            <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                            <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                             <div class="voucher_card_content">
                                                 <div class="voucher_left">
                                                     <div class="voucher_left_top">
@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
@@ -102,7 +102,7 @@
                                 <div class="voucher_details_container">
                                     <div class="voucher_details_inner">
                                         <div class="voucher_details_face voucher_details_front">
-                                            <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                            <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                             <div class="voucher_card_content">
                                                 <div class="voucher_left">
                                                     <div class="voucher_left_top">
@@ -145,7 +145,7 @@
                         </div>
                         <div class="card_profile_back">
                             <div class="profile_back_card">
-                                <a href="#" class="cancel_btn cancel_profile"><img src="dist/images/svg/cancel_blue.svg" alt=""/></a>
+                                <a href="#" class="cancel_btn cancel_profile"><img src="../dist/images/svg/cancel_blue.svg" alt=""/></a>
                                 <div class="card_profile_content">
                                     <div class="form_group form_name">
                                         <label class="form_lbl">Name</label>
@@ -190,19 +190,19 @@
                             <div class="info_btm_title">Keep Yourself Safe</div>
                             <div class="info_btm_icon_flex">
                                 <div class="info_btm_rows rows_01">
-                                    <div class="info_icon icon_01"><img src="dist/images/cvd_info_icon_01.png" alt="" /></div>
+                                    <div class="info_icon icon_01"><img src="../dist/images/cvd_info_icon_01.png" alt="" /></div>
                                     <div class="icon_caption">Wear a mask</div>
                                 </div>
                                 <div class="info_btm_rows rows_02">
-                                    <div class="info_icon icon_02"><img src="dist/images/cvd_info_icon_02.png" alt="" /></div>
+                                    <div class="info_icon icon_02"><img src="../dist/images/cvd_info_icon_02.png" alt="" /></div>
                                     <div class="icon_caption">Sanitize Your Hands</div>
                                 </div>
                                 <div class="info_btm_rows rows_03">
-                                    <div class="info_icon icon_03"><img src="dist/images/cvd_info_icon_03.png" alt="" /></div>
+                                    <div class="info_icon icon_03"><img src="../dist/images/cvd_info_icon_03.png" alt="" /></div>
                                     <div class="icon_caption">Keep Your Distance</div>
                                 </div>
                                 <div class="info_btm_rows rows_04">
-                                    <div class="info_icon icon_04"><img src="dist/images/cvd_info_icon_04.png" alt="" /></div>
+                                    <div class="info_icon icon_04"><img src="../dist/images/cvd_info_icon_04.png" alt="" /></div>
                                     <div class="icon_caption">No Handshake</div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
@@ -239,7 +239,7 @@
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
@@ -261,7 +261,7 @@
                             <div class="voucher_details_container">
                                 <div class="voucher_details_inner">
                                     <div class="voucher_details_face voucher_details_front">
-                                        <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
+                                        <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_blue.png" alt=""/></div>
                                         <div class="voucher_card_content">
                                             <div class="voucher_left">
                                                 <div class="voucher_left_top">
@@ -286,7 +286,7 @@
                             <div class="voucher_title">Expired</div>
                             <div class="voucher_details_container">
                                 <div class="voucher_details_face voucher_details_front">
-                                    <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
+                                    <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
                                     <div class="voucher_card_content">
                                         <div class="voucher_left">
                                             <div class="voucher_left_top">
@@ -306,7 +306,7 @@
                             </div>
                             <div class="voucher_details_container">
                                 <div class="voucher_details_face voucher_details_front">
-                                    <div class="voucher_card"><img src="dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
+                                    <div class="voucher_card"><img src="../dist/images/cvd_voucher_flat_grey.png" alt=""/></div>
                                     <div class="voucher_card_content">
                                         <div class="voucher_left">
                                             <div class="voucher_left_top">
@@ -363,7 +363,7 @@
                     <div class="activity_container">
                         <div class="activity_details">
                             <div class="calendar_day">Calendar Day: 29 May 2020</div>
-                            <a href="#" class="cancel_btn cancel_activity"><img src="dist/images/svg/cancel_blue.svg" alt=""/></a>
+                            <a href="#" class="cancel_btn cancel_activity"><img src="../dist/images/svg/cancel_blue.svg" alt=""/></a>
                         </div>
                         <div class="activity_calendar_listing_container">
                             
@@ -457,11 +457,11 @@
     </div>
     
 
-    <script src="dist/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="dist/js/app.js"></script>
+    <script src="../dist/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="../dist/js/app.js"></script>
     
     
     <script>
