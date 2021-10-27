@@ -1,7 +1,6 @@
 <?php
 
 include_once "model/connection.php";
-require_once "model/tacno_model.php";
 session_start();
 //echo session_id();
 
